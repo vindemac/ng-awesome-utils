@@ -1,4 +1,4 @@
-angular.module("ng-awesome-utils",[])
+angular.module("ngAwesomeUtils",[])
 /***  Orderby that takes in count the special characters *****/
 .filter("localeOrderBy", [function () {
         return function (array, sortPredicate, reverseOrder) {
@@ -23,8 +23,8 @@ angular.module("ng-awesome-utils",[])
             });
  
             arrayCopy.sort(function (a, b) {
-                var valueA = a[sortPredicate];
-                var valueB = b[sortPredicate];
+                var valueA = a;
+                var valueB = b;
  
                 if (isString(valueA))
                     return !reverseOrder ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
