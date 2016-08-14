@@ -1,4 +1,4 @@
-angular.module("awesomeUtils",[])
+angular.module("ng-awesome-utils",[])
 /***  Orderby that takes in count the special characters *****/
 .filter("localeOrderBy", [function () {
         return function (array, sortPredicate, reverseOrder) {
