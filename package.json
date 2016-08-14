@@ -1,0 +1,40 @@
+{
+  "name": "ng-awesome-utils",
+  "version": "0.0.1",
+  "description": "directives and filters found all over the internet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vindemac/ng-awesome-utils.git"
+  },
+  "main": "index.js",
+  "author": "Vinicius Moreira",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "filter",
+    "utils"
+  ],
+  "license": "GNU",
+  "devDependencies": {
+   "phantomjs" : "~1.9",
+    "karma": "~0.13",
+    "karma-bro": "~0.11",
+    "karma-chai": "~0.1",
+    "karma-mocha": "~0.2",
+    "karma-cli": "~0.1",
+    "karma-phantomjs-launcher": "~0.2",
+    "mocha": "~2.2",
+    "browserify-shim": "3"
+  },
+   "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": "global:angular"
+  },
+  "scripts": {
+  }
+}
